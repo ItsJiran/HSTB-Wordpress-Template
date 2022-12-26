@@ -1,0 +1,402 @@
+
+
+
+/* 
+ ==================================================================================================
+ +-----------------------------------+ BASIC STYLES +----------------------------------------+
+ ================================================================================================== 
+ */
+/* -------------- HERO STYLE ----------------- */
+.hero-header-container, .hero-heading{
+    width:fit-content;
+ }
+.hero-heading, .hero-paragraph{
+    margin-bottom:15px;
+}
+.hero-heading{
+    font-size:2.5em;
+}
+.hero-paragraph{
+    font-size:1em;
+}
+.hero-btn-container{
+    gap:15px;
+}
+.hero-btn-container .btn{
+    flex-grow:1;
+}
+.hero-wrapper{
+  min-height:500px;
+}
+
+ /* 
+ ==================================================================================================
+ +-------------------------------------+ SECTION 1 +----------------------------------------------+
+ ================================================================================================== 
+ */
+
+#hero-1 .hero-heading,
+#hero-1 .hero-paragraph{
+    text-align:justify;
+    text-align-last:justify;
+} 
+#hero-1 .hero-heading{
+    font-size:2.5em;
+}
+#hero-1 .hero-paragraph{
+    font-size:1em;
+}
+
+
+/* -------------- HERO 1 IMAGE --------------------------  */
+#hero-1 .hero-content-wrapper .hero-image-container{
+    position:absolute;
+}
+#hero-1 .hero-content-wrapper{
+    position:relative;
+}
+#hero-1 .hero-content-wrapper .hero-image-container{
+    border-radius:100%;
+    transform:scale(0.8);
+    transition:1s;
+}
+#hero-1 .hero-content-wrapper .hero-image-container:nth-child(1){
+    height:340px;
+    width:340px;
+    top:2%;
+    right:0%;
+    background-color:var(--main-purple-template-color);
+}
+#hero-1 .hero-content-wrapper .hero-image-container:nth-child(2){
+    height:180px;
+    width:180px;
+    top:55%;
+    right:65%;
+    background-color:var(--main-blue-template-color);
+}
+#hero-1 .hero-content-wrapper .hero-image-container:nth-child(3){
+    height:90px;
+    width:90px;
+    top:28%;
+    right:80%;
+    background-color:var(--secondary-purple-template-color);
+}
+
+#hero-1 .hero-content-wrapper .hero-image-container img{
+    position:relative;
+}
+
+/* ICON STYLING */
+#hero-1 .hero-content-wrapper .hero-image-container:nth-child(1) img{
+    height:100%;
+    width:100%;
+}
+#hero-1 .hero-content-wrapper .hero-image-container:nth-child(2) img{
+    top:-30px;
+    right:-20px;
+}
+#hero-1 .hero-content-wrapper .hero-image-container:nth-child(3) img{
+    top:-5px;
+    left:-10px;
+}
+
+/* -------------- ACTIVE HERO 1 IMAGE --------------------------  */
+.owl-item.active #hero-1 .hero-content-wrapper .hero-image-container{
+    transform:scale(1);
+}
+
+/* -------------- HERO 2 IMAGE --------------------------  */
+#hero-2 .hero-content-wrapper{
+    position:relative;
+}
+#hero-2 .post-card-thumbnail-container{
+    position:absolute;
+    z-index:50;
+    transition:0.8s;
+    box-shadow:1px 1px 20px #272323;
+}
+
+#hero-2 .post-card-thumbnail-container{
+  aspect-ratio:1/0.7;
+}
+
+/* FOR THE IMAGE POSITIONAL */
+#hero-2 .post-card-thumbnail-container.center-image{
+    top:20%;
+    right:20%;
+    width:400px;
+    font-size:0.85em;
+    z-index:51;
+}
+#hero-2 .post-card-thumbnail-container.top-image{
+    top:8%;
+    right:0%;
+    width:265px;
+    z-index:50;
+    font-size:0.7em;
+}
+#hero-2 .post-card-thumbnail-container.below-image{
+    top:50%;
+    right:5%;
+    font-size:0.6em;
+    z-index:50;
+    width:250px;
+}
+
+#hero-2 .post-card-thumbnail-container.top-image:after,
+#hero-2 .post-card-thumbnail-container.below-image:after{
+    display:unset;
+}
+#hero-2 .post-card-thumbnail-container.top-image:after{
+    opacity:0.2;
+}
+#hero-2 .post-card-thumbnail-container.below-image:after{
+    opacity:0.4;
+}
+
+
+ /* 
+ ==================================================================================================
+ +-------------------------------------+ SECTION 2 +----------------------------------------------+
+ ================================================================================================== 
+ */
+.quote-wrapper{
+    position:relative;
+    margin:40px 0px 60px;
+}
+
+.quote-container{
+    position:relative;
+    width:60%;
+    font-size:1.5em;
+    font-weight:600;
+    line-height:1.3;
+    padding:45px;
+    margin:0px auto;
+    text-align:center;
+    border-radius:10px;
+    color:white;
+    border:1px solid white;
+    background: linear-gradient(50deg, rgba(255,255,255,0.3393732492997199) 0%, rgba(255,255,255,0.4766281512605042) 100%);
+    z-index:5
+}
+.quote-wrapper:before, .quote-wrapper:after{
+    position:absolute;
+    content:'';
+    border-radius:100%;
+    z-index:4;
+ }
+.quote-wrapper:before{
+    height:80px;
+    width:80px;
+    top:-40px;
+    right:5%;
+    background-color:var(--main-yellow-template-color);
+ }
+.quote-wrapper:after{
+    height:200px;
+    width:200px; 
+    bottom:-60px;
+    left:0px;
+    background-color:var(--secondary-purple-template-color);
+}
+.quote-icon{
+    height:48px;
+    width:48px;
+ }
+
+/* 
+==================================================================================================
++-------------------------------------+ SECTION 3 +----------------------------------------------+
+================================================================================================== 
+*/
+#section-3 .heading-1{
+  margin-bottom:40px;
+}
+.program-container{
+    padding:20px;
+    border-radius:20px; 
+   background-color:var(--main-gray-template-color);
+}
+#program-1{
+    background-color:var(--main-blue-template-color);
+}
+#program-2{
+    background-color:var(--main-yellow-template-color);
+}
+#program-3{
+    background-color:var(--secondary-purple-template-color);
+}
+
+.program-container .heading-2{
+  margin-bottom:0px;
+}
+
+.program-image-container{
+  overflow:hidden;
+  border-radius:20px;
+  margin:0px auto;
+}
+.program-description-container{
+  gap:20px;
+}
+
+/* 
+==================================================================================================
++-------------------------------------+ SECTION 4 +----------------------------------------------+
+================================================================================================== 
+*/
+/* +--------+ CONTAINER EFFECT +----------+ */
+.teacher-container{
+    padding:35px 0px;
+    margin:0px auto;
+    max-width:200px;
+    display:flex;
+    flex-direction: column;   
+}
+
+/* +--------+ IMG CONTAINER +----------+ */
+.teacher-img-container:before{
+    position:absolute;
+    content:'';
+    width:100%;
+    height:100%;
+    bottom:-40px;
+    background-color:var(--main-yellow-template-color);
+}
+.teacher-img-container:before, .teacher-info-container{
+    border-radius:20px;
+}
+.teacher-img-container, .teacher-img-container img, .teacher-info-container{
+    position:relative;
+}
+.teacher-img__container img{
+    height:200px;
+}
+
+/* +--------+ INFO STYLE +----------+ */
+.teacher-info-container{
+    height:100%;
+    padding:30px 20px;
+    border:1px solid var(--main-yellow-template-color);
+    background-color:var(--main-white-template-color);
+}
+.teacher-name{
+    font-size:1.5em;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+/* +--------+ HOVER EFFECT +----------+ */
+.teacher-container:hover{
+    transform:scale(1.1);
+    transition:0.4s;
+}
+.teacher-container:hover .teacher-img__container:before, .teacher-container:hover .teacher-info-container{
+    box-shadow: 0px 0px 30px #CFCFCF;
+}
+
+
+/* 
+==================================================================================================
++-------------------------------------+ SECTION 5 +----------------------------------------------+
+================================================================================================== 
+*/
+
+.faq-heading{
+    position:relative;
+    margin-bottom:80px;
+}
+.faq-heading .icon1,
+.faq-heading .icon2,
+.faq-heading .icon3{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+.faq-heading .icon1{
+    height:80px;
+    width:80px;
+    margin-top:30px;
+    margin-left:-100px;
+    color: var(--main-blue-template-color);
+}
+.faq-heading .icon2{
+    height:50px;
+    width:50px;
+    margin-top:-80px;
+    margin-left:-80px;
+    transform:scaley(-1) translate(-50%, -50%);
+    color: var(--secondary-purple-template-color);
+}
+.faq-heading .icon3{
+    height:180px;
+    width:180px;
+    margin-left:-30px;
+    transform:scalex(-1) translate(-50%, -50%);
+    color: var(--main-yellow-template-color);
+}
+.faq-question-container{
+    position:relative;
+    border-radius:20px;    
+    margin-bottom:40px;
+    background-color:var(--third-gray-template-color);
+}
+.faq-question-container:after{
+    position:absolute;
+    content:'';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: var(--third-gray-template-color) transparent transparent transparent;
+    bottom:-20px;
+    left:20px;
+}
+.faq-question-btn{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    font-size:1.3em;
+    font-weight:700;
+    margin-bottom:0px;
+}
+.faq-answer-container{
+    padding:20px;
+    padding-top:0px;
+    display:none;
+}
+.faq-question-container.active{
+    color:var(--main-white-template-color);
+    background-color:var(--main-purple-template-color);
+}
+.faq-question-container.active svg{
+    transform:rotate(90deg);
+}
+.faq-question-container.active .faq-answer-container{
+    display:block;
+}
+.faq-question-container.active:after{
+    border-color: var(--main-purple-template-color) transparent transparent transparent;
+}
+
+/* 
+==================================================================================================
++-------------------------------------+ SECTION 6 +----------------------------------------------+
+================================================================================================== 
+*/
+#section-6 .section-heading-icon svg{
+    transform:rotate(-10deg);
+    color:var(--main-purple-template-color);
+}
+.map-container{
+  margin:0px auto;
+   padding-top:20px;    
+}
+.map-iframe{
+    border-radius:20px;
+    height:500px;
+    width: 100%;
+}

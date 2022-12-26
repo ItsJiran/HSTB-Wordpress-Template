@@ -1,0 +1,251 @@
+/* 
+ ==================================================================================================
+ +----------------------------------+ RESPONSIVE +-----------------------------------------+
+ ================================================================================================== 
+ */
+ @media only screen and (max-width: 1100px) {
+	
+  /* 
+   ==================================================================================================
+   +----------------------------------+ HERO IMAGE +-----------------------------------------+
+   ================================================================================================== 
+   */
+  #hero-1 .hero-content-wrapper .hero-image-container:nth-child(1){
+    height:300px;
+    width:300px;
+  }
+  #hero-1 .hero-content-wrapper .hero-image-container:nth-child(2){
+    height:140px;
+    width:140px;
+  }
+  #hero-1 .hero-content-wrapper .hero-image-container:nth-child(3){
+    height:60px;
+    width:60px;
+  }
+
+
+  #hero-2 .post-card-thumbnail-container.center-image{
+    width:340px;
+  }
+  #hero-2 .post-card-thumbnail-container.top-image{
+    top:10%;
+    width:240px;
+  }
+  #hero-2 .post-card-thumbnail-container.below-image{
+     width:220px;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 1050px) {
+
+
+
+}
+
+@media only screen and (max-width: 950px) {
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  /* 
+   ==================================================================================================
+   +----------------------------------+ HERO IMAGE +-----------------------------------------+
+   ================================================================================================== 
+   */
+  #hero-1 .hero-content-wrapper .hero-image-container:nth-child(1){
+    height:280px;
+    width:280px;
+    top:5%;
+  }
+  #hero-1 .hero-content-wrapper .hero-image-container:nth-child(2){
+    height:120px;
+    width:120px;
+  }
+  #hero-1 .hero-content-wrapper .hero-image-container:nth-child(3){
+    height:60px;
+    width:60px;
+  }
+
+  #hero-2 .post-card-thumbnail-container.center-image{
+    width:300px;
+  }
+  #hero-2 .post-card-thumbnail-container.top-image{
+    width:230px;
+  }
+  #hero-2 .post-card-thumbnail-container.below-image{
+    width:210px;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+
+
+  /* 
+ ==================================================================================================
+ +----------------------------------+ HERO SECTION +-----------------------------------------+
+ ================================================================================================== 
+ */
+  #section-2{
+    text-align:center;
+  }
+
+  /* 
+   ==================================================================================================
+   +----------------------------------+ PROGRAM SECTION +-----------------------------------------+
+   ================================================================================================== 
+   */
+  .program-image-container{
+    max-height:320px;
+  } 
+	
+}
+
+@media only screen and (max-width: 750px) {
+
+  /* 
+   ==================================================================================================
+   +----------------------------------+ HERO SECTION +-----------------------------------------+
+   ================================================================================================== 
+   */
+  .hero-content-wrapper{
+    height:350px;
+    width:100%; 
+    align-self:center;
+  }
+  .hero-header-wrapper{
+    align-self:center;
+    width:fit-content
+  }
+  #hero-1 .hero-content-wrapper,
+  #hero-2 .hero-content-wrapper{
+    width:80%;
+  }
+
+  #hero-2 .post-card-thumbnail-container.top-image{
+    top:3%;
+  }
+  #hero-2 .post-card-thumbnail-container.below-image{
+    top:55%;  
+  }
+  #hero-2 .post-card-thumbnail-container.center-image{
+  }
+
+
+}
+
+@media only screen and (max-width:600px){
+
+	
+}
+
+@media only screen and (max-width:500px){
+
+  #hero-1 .hero-content-wrapper,
+  #hero-2 .hero-content-wrapper{
+    width:100%;
+  }
+
+  #hero-2 .post-card-thumbnail-container.top-image{
+    width:240px;
+  }
+  #hero-2 .post-card-thumbnail-container.center-image{
+    width:280px;
+  }
+  #hero-2 .post-card-thumbnail-container.bottom-image{
+    width:220px;
+  }
+
+}
+
+
+@media only screen and (max-width:450px){
+
+  /* 
+   ==================================================================================================
+   +----------------------------------+ HERO IMAGE +-----------------------------------------+
+   ================================================================================================== 
+   */
+  #hero-1 .hero-content-wrapper .hero-image-container:nth-child(1){
+    height:250px;
+    width:250px;
+  }
+
+  .faq-heading .icon1{
+    height:70px;
+    width:70px;
+  }
+  .faq-heading .icon2{
+    height:40px;
+    width:40px;
+  }
+  .faq-heading .icon3{
+    height:150px;
+    width:150px;
+  }
+
+  .program-container{
+    padding:20px;
+  }
+
+}
+
+@media only screen and (max-width:420px){
+
+
+}
+
+@media only screen and (max-width:400px){
+
+  #hero-2 .post-card-thumbnail-container.center-image{
+    right:10%;
+  }
+  #hero-2 .post-card-thumbnail-container.top-image{
+    width:200px;
+  }
+  #hero-2 .post-card-thumbnail-container.center-image{
+    width:240px;
+  }
+  #hero-2 .post-card-thumbnail-container.below-image{
+    width:180px;
+  }
+}
+
+@media only screen and (max-width:350px){
+
+  /* 
+   ==================================================================================================
+   +----------------------------------+ HERO IMAGE +-----------------------------------------+
+   ================================================================================================== 
+   */
+  #hero-1 .hero-content-wrapper .hero-image-container:nth-child(1){
+    height:200px;
+    width:200px;
+    top:5%;
+  }
+  #hero-1 .hero-content-wrapper .hero-image-container:nth-child(2){
+    height:100px;
+    width:100px;
+  }
+  #hero-1 .hero-content-wrapper .hero-image-container:nth-child(3){
+  }
+  .hero-content-wrapper{
+    height:300px;
+  }
+  #hero-1, #hero-2{
+    min-height:fit-content;
+  }
+
+  .faq-heading .icon3{
+    height:120px;
+    width:120px;
+    margin-left:-10px;
+  }
+
+
+}
