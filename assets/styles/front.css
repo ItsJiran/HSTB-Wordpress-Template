@@ -214,9 +214,9 @@
   margin-bottom:40px;
 }
 .program-container{
-    padding:20px;
-    border-radius:20px; 
-   background-color:var(--main-gray-template-color);
+  padding:20px;
+  border-radius:20px; 
+  background-color:var(--main-gray-template-color);
 }
 #program-1{
     background-color:var(--main-blue-template-color);

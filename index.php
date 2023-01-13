@@ -26,6 +26,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 		<script src='<?php echo get_template_directory_uri() . '/assets/scripts/jquery-3.6.1.min.js';  ?>'></script>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
 
 		<?php 
 		// ==========================================================================================

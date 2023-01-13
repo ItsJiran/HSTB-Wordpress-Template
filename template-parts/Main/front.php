@@ -120,7 +120,11 @@ $posts = get_posts($posts_query);
             <div class='block block-center'>
                 <h2 class='heading-1'>Tentang HSTB</h2>
                 <p class='paragraph-1'>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat 
+Sekolah HomeSchool Tunas Bangsa, adalah sekolah dengan cara belajar aktif mandiri. Sekolah HSTB adalah wahana untuk mereka belajar dan berkembang, dengan para pembimbing yang akan memfasilitasi dan menemani mereka selama proses belajar. Melayani kebutuhan belajar para peserta didik.
+</br>
+</br>
+HSTB adalah sekolah menjunjung tinggi budi pekerti, yaitu 50% budi pekerti dan 50% akademisi & keterampilan. Karakter yang dibentuk adalah anak-anak yang memahami etika, moral,
+nasionalis dan religius.
                 </p>
             </div>
             <div class='block block-center quote-wrapper'>
@@ -151,7 +155,17 @@ $posts = get_posts($posts_query);
                 </div>
                 <div class='program-description-container block block-center'>
                     <h3 class='heading-2'>My Own Life Book</h3>
-                    <p class='paragraph-2'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+                    <p class='paragraph-2'>
+ Standar Kompetensi KBM </br>
+dengan 10 Aspek dalam Kehidupan </br>
+My Own Lifebook (Budi Pekerti)
+Keberhasilan pendidikan adalah 100% karakter, karena semua aspek dalam kehidupan seperti potensi dan keahlian adalah salah satu dari pembentukan karakter dan identitas diri.
+</br>
+</br>
+Internal Eksternal
+Health and fitness - Intellectual - Emotional - Spiritual - Skill - Family - Friendship - Career - Financial - Quality - Vision
+                  
+                   </p>
                     <a href='#' class='alt-btn white-bg'>More</a>
                 </div>
               </div>

@@ -49,36 +49,28 @@ function displayer_main_content(){
     if( is_single() )
       return get_template_part('template-parts/Main/post');
 
-    // +---------------+ ABOUT +------------------+
-    // +------------------------------------------+
+    // +---------------+ PAGE +------------------+
+    // +------------------------------------------+ 
     if( is_page('about') )
       return get_template_part('template-parts/Main/about');
 
-    // +---------------+ CONTACT +------------------+
-    // +--------------------------------------------+
     if( is_page('contact') )
       return get_template_part('template-parts/Main/contact');
 
-    // +---------------+ BLOGS +------------------+
-    // +------------------------------------------+
     if( is_page('blogs') )
       return get_template_part('template-parts/Main/blogs');
 
-    // +------------+ TESTIONIALS +---------------+
-    // +------------------------------------------+
     if( is_page('testimonials') )
       return get_template_part('template-parts/Main/testimonials');
 
-    // +------------+ FACILITY +---------------+
-    // +------------------------------------------+
     if( is_page('fasilitas') )
       return get_template_part('template-parts/Main/fasilitas');
 
-    // +------------+ FACILITY +---------------+
-    // +------------------------------------------+
     if( is_page('pendaftaran') )
       return get_template_part('template-parts/Main/pendaftaran');
 
+    if( is_page('gallery') )
+      return get_template_part('template-parts/Main/gallery');
 
 }
 
@@ -88,7 +80,7 @@ function displayer_main_content(){
 // ===============================================================================
 function displayer_footer_content(){
 
-  if( is_page('about') )
+  if( is_page('about') || is_page('gallery') )
     return get_template_part('template-parts/Footer/yellow-rounded-footer');
 
   if( is_front_page() && is_home() || is_home() || is_single() || is_page() )

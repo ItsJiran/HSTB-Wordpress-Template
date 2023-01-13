@@ -87,7 +87,7 @@
   .block-even-responsive-800.block-reverse-responsive{
     flex-direction:column-reverse;
   }
-
+  
   .grid-3, .grid-4{
     grid-template-columns:1fr 1fr;
   }

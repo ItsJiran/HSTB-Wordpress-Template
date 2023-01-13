@@ -22,10 +22,11 @@
   width:100%;
   font-size:1.3em;
   font-weight:600;
-  padding:40px 80px;
+  padding:40px 40px;
   box-sizing:border-box;
   border-radius:10px;
   background-color:var(--main-white-template-color);
+  line-height:1.2;
 }
 
 /* 
@@ -188,7 +189,52 @@
 #fasilitas-page-section-4 .card-thumbnail-container .heading-2{
   margin-bottom:5px;
 }
-#fasilitas-page-section-4 .card-thumbnail-container img{
 
+/* 
+ ==============================================================================================
+ +----------------------------------+ PENDAFTARAN PAGES +-----------------------------------------+
+ ==============================================================================================
+ */
+
+.pendaftaran-heading{
+  color:var(--main-yellow-template-color);
+  text-shadow: -2px 2px 0px var(--main-purple-template-color);
+  font-size:4rem;
+}
+.pendaftaran-info-container{
+  gap:20px;
+}
+.pendaftaran-info-container .btn{
+  font-size:1.5rem;
+  padding:15px 20px;
+  margin-bottom:5px;
+}
+.pendaftaran-info-container .paragraph-4{
+  font-weight:700;
+}
+.pendaftaran-info-container .heading-2{
+  font-weight:600;
 }
 
+
+.pendaftaran-detail{
+  margin-top:25px;
+}
+.pendaftaran-detail .block:nth-child(1){
+  width:200%;
+}
+.pendaftaran-detail ul{
+  margin-top:15px;
+}
+.pendaftaran-detail .heading-3{
+  font-size:2rem;
+  font-weight:600;
+  margin-right:40px;
+  font-family: 'Kalam', cursive;
+}
+.pendaftaran-detail .paragraph-3{
+  font-weight:600;
+}
+.pendaftaran-detail .grid-2{
+  grid-gap:5px;
+}
