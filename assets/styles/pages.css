@@ -156,6 +156,7 @@
 
 #fasilitas-page-section-2 .card-container{
   text-align:center;
+  padding:20px;
 }
 
 .facilities-icon-container{
@@ -175,3 +176,19 @@
 #fasilitas-page-section-2 .card-container:nth-child(4n+4) .facilities-icon-container{
   background-color:var(--main-blue-template-color);
 }
+
+
+#fasilitas-page-section-4 .card-container{
+  box-shadow:0px 0px 10px #dfdfdf;
+}
+#fasilitas-page-section-4 .card-thumbnail-container{
+  border-radius:20px;
+  overflow:hidden;
+}
+#fasilitas-page-section-4 .card-thumbnail-container .heading-2{
+  margin-bottom:5px;
+}
+#fasilitas-page-section-4 .card-thumbnail-container img{
+
+}
+

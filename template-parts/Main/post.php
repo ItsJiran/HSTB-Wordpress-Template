@@ -16,6 +16,5 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 <section id='post-section'  class='section next-section-rounded'>
   <div class='section-wrapper block-wrapper'>
-
   </div>
 </section>

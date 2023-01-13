@@ -62,16 +62,17 @@ $posts_object = array(
         </div>
       </form>
 
-        <?php if(count($posts_object['posts']) == 0): ?>
-          <h2 class='heading-2'>No Posts Found</h2>
-        <?php endif; ?>
+      <?php if(count($posts_object['posts']) == 0): ?>
+        <h2 class='heading-2'>No Posts Found</h2>
+      <?php endif; ?>
 
       <?php if(count($posts_object['posts']) !== 0 ): ?>
         <div class='blog-container grid-4'>
 
           <?php foreach( $posts_object['posts'] as $post ): ?>
             <div class='post-card-container'>
-              <a class='post-card-thumbnail-container' href='<?php echo $post->guid; ?>'  >
+              <a class='post-card-thumbnail-container' href='<?php echo get_permalink($post); ?>'  >
+
                 <div class='post-card-thumbnail-image-container'?>
                     <img src=' <?php echo get_first_image( $post ); ?> ' />
                 </div>

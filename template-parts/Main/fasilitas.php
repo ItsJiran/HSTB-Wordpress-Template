@@ -26,19 +26,19 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
   <div class='section-wrapper'>
     <div id='facilities-container' class='grid-4 block-wrapper'>
-      <div class='card-container'>
+      <div class='card-container border'>
        <div class='facilities-icon-container'> </div> 
        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh </p>
       </div>
-      <div class='card-container'>
+      <div class='card-container border'>
        <div class='facilities-icon-container'> </div> 
        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh </p>
       </div>
-      <div class='card-container'>
+      <div class='card-container border'>
        <div class='facilities-icon-container'> </div> 
        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh </p>
       </div>
-      <div class='card-container'>
+      <div class='card-container border'>
        <div class='facilities-icon-container'> </div> 
        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh </p>
       </div>
@@ -72,9 +72,43 @@ if ( !defined( 'ABSPATH' ) ) exit;
 <section id='fasilitas-page-section-4'  class='section next-section-rounded'>
 
   <div class='section-wrapper'>
-    <div class='facilities-description-container grid-2'>
-
-
+    <div class='facilities-description-container block-wrapper grid-2'>
+      <div class='card-container row'>
+        <div class='card-thumbnail-container'>
+          <img src='#'> 
+        </div>
+        <div class='card-info-wrapper'>
+          <h2 class='heading-3'>Lorem Ipsum</h2>
+          <p class='paragraph-2'>Lorem ipsum dolor sit amet, consectetuer consectetuer Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+        </div>
+      </div>
+      <div class='card-container  row'>
+        <div class='card-thumbnail-container'>
+          <img src='#'> 
+        </div>
+        <div class='card-info-wrapper'>
+          <h2 class='heading-3'>Lorem Ipsum</h2>
+          <p class='paragraph-2' >Lorem ipsum dolor sit amet, consectetuer consectetuer Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+        </div>
+      </div>
+      <div class='card-container row'>
+        <div class='card-thumbnail-container'>
+          <img src='#'> 
+        </div>
+        <div class='card-info-wrapper'>
+          <h2 class='heading-3'>Lorem Ipsum</h2>
+          <p class='paragraph-2'>Lorem ipsum dolor sit amet, consectetuer consectetuer Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+        </div>
+      </div>
+      <div class='card-container row'>
+        <div class='card-thumbnail-container'>
+          <img src='#'> 
+        </div>
+        <div class='card-info-wrapper'>
+          <h2 class='heading-3'>Lorem Ipsum</h2>
+          <p class='paragraph-2'>Lorem ipsum dolor sit amet, consectetuer consectetuer Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+        </div>
+      </div>
     </div>
   </div>
 

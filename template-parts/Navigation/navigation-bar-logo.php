@@ -13,7 +13,6 @@ namespace Simple;
 if ( !defined( 'ABSPATH' ) ) exit;
 
 $logo_url = get_template_directory_uri() . '/assets/navigation-logo.png';
-
 ?>
 
 <!-- +--------------------------+ NAVIGATION LOGO +--------------------------+ -->

@@ -564,8 +564,34 @@ svg{
 
 /* CARD CONTAINER */
 .card-container{
+  display:flex;
+  flex-direction: column;
   font-size:0.9em;
   border-radius:20px;
-  border:1px solid var(--secondary-gray-template-color);
+  overflow:hidden;
+}
+.card-container.row{
+  flex-direction: row;
+}
+.card-thumbnail-container{
+  min-height:150px;
+  flex-grow:1;
+}
+.card-thumbnail-container img{
+  width:100%;
+  height:100%;
+  background-color:var(--main-purple-template-color);
+}
+.card-info-wrapper{
+  flex:2; 
+  flex-grow:1;
   padding:20px;
 }
+
+.border{
+  border:1px solid var(--secondary-gray-template-color);
+}
+/* BASIC CARD CONTAINER */
+
+
+

@@ -17,6 +17,9 @@ if ( !defined( 'ABSPATH' ) ) exit;
 <section id='pendaftaran-page-section'  class='section next-section-rounded'>
 
   <div class='section-wrapper'>
+
+
+
   </div>
 
 </section>
