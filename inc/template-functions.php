@@ -57,3 +57,28 @@ function get_summary_post($post){
   }
   return $text;
 }
+function format_web_title(){
+
+  if( is_front_page() && is_home() || is_home() )
+    return "Home School Tunas Bangsa";
+
+  if( is_single() )
+    return  get_the_title();
+
+  if( is_page() )
+    return get_the_title() . ' - Home School Tunas Bangsa';
+
+}
+function format_web_description(){
+
+
+  if( is_front_page() && is_home() || is_home() || is_page('about') )
+    return "Sekolah Home School Tunas Bangsa adalah sekolah dengan cara belajar aktif mandiri. Sekolah HSTB adalah wahana untuk mereka belajar dan berkembang, dengan para pembimbing yang akan memfasilitasi dan menemani mereka selama proses belajar. Melayani kebutuhan peserta didik";
+
+  if( is_single() )
+    return  get_the_excerpt();
+
+  if( is_page() )
+    return  get_the_excerpt();
+
+}

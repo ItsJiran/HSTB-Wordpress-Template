@@ -70,23 +70,23 @@ $posts_object = array(
         <div class='blog-container grid-4'>
 
           <?php foreach( $posts_object['posts'] as $post ): ?>
-            <div class='post-card-container'>
-              <a class='post-card-thumbnail-container' href='<?php echo get_permalink($post); ?>'  >
+            <article itemscope='itemscope' itemprop='blogPost' itemtype='https://schema.org/BlogPosting' class='post-card-container'>
+              <a class='post-card-thumbnail-container' title='<?php echo $post->post_title ?>' href='<?php echo get_permalink($post); ?>'  >
 
                 <div class='post-card-thumbnail-image-container'?>
-                    <img src=' <?php echo get_first_image( $post ); ?> ' />
+                    <img alt='<?php echo $post->post_title?>' src=' <?php echo get_first_image( $post ); ?> ' />
                 </div>
                 <div class='post-card-thumbnail-info-container'>
-                  <h2 class='heading-3'><?php echo $post->post_title; ?></h2>
+                  <h2 itemprop='headline' class='heading-3'><?php echo $post->post_title; ?></h2>
                 </div>
               </a>
               <div class='post-card-info-wrapper'>
-                <div class='post-card-info-container'>
+                <div itemprop='articleBody description' class='post-card-info-container'>
                     <p class='paragraph-3'> <?php echo get_summary_post($post);  ?> </p> 
                 </div>
-                <a href='<?php echo $post->guid; ?>' class='btn'>Read More</a>
+                <a href='<?php echo get_permalink($post); ?>' class='btn'>Read More</a>
               </div>
-            </div>
+            </article>
           <?php endforeach; ?>
        
         </div>

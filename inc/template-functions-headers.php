@@ -48,7 +48,6 @@ function wp_header_style_init(){
     };
 
     if( is_page() ){
-
       // pages is a section in the homepage that maybe can we use in other page
       include_style_file('pages',  'pages.css',   '/assets/styles/');   
       include_style_file('pages-responsive','pages-responsive.css','/assets/styles/');   

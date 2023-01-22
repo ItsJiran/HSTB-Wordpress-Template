@@ -114,7 +114,13 @@
   #footer-section{
     text-align:center;
   }
-	
+
+  .full-post-wrapper{
+    flex-direction:column;
+  }
+  .side-post-container, .post-container, .post-comments-container{
+    width:100%;
+  }
 
 }
 
@@ -185,6 +191,9 @@
   } 
   .block-even-responsive-500.block-reverse-responsive{
     flex-direction:column-reverse;
+  }
+  .block-wrapper{
+    padding:0px 20px;
   }
   .grid-2, .grid-3, .grid-4{
     grid-template-columns:1fr;

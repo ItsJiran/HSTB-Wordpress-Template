@@ -18,9 +18,15 @@ $posts_query = array(
   'posts_per_page' => 3,
   'category_name' => 'post',
 );
+$posts_query_section = array(
+  'posts_per_page' => 6,
+  'category_name' => 'post',
+);
+
 
 // CREATING AN DYNAMIC ARRAY
 $posts = get_posts($posts_query);
+$posts_section = get_posts($posts_query_section);
 
 ?>
 
@@ -78,16 +84,16 @@ $posts = get_posts($posts_query);
                   <?php for( $i = 0; $i < 3; $i++ ): ?>
 
                     <?php if($i == 0): ?>
-                      <div class='post-card-thumbnail-container center-image'>
+                      <article itemscope='itemscope' itemprop='blogPost' itemtype='https://schema.org/BlogPosting'  class='post-card-thumbnail-container center-image'>
                       <?php elseif($i == 1): ?>
-                      <div class='post-card-thumbnail-container top-image'>
+                      <article itemscope='itemscope' itemprop='blogPost' itemtype='https://schema.org/BlogPosting'  class='post-card-thumbnail-container top-image'>
                       <?php elseif($i == 2): ?>
-                      <div class='post-card-thumbnail-container below-image'>
+                      <article itemscope='itemscope' itemprop='blogPost' itemtype='https://schema.org/BlogPosting'   class='post-card-thumbnail-container below-image'>
                     <?php endif; ?>
 
 
                         <div class='post-card-thumbnail-image-container'>
-                            <img src=' <?php echo get_first_image($posts[$i]); ?> ' />
+                            <img alt='<?php get_summary_post($posts[$i]) ?>' src=' <?php echo get_first_image($posts[$i]); ?> ' />
                         </div>
                             <?php if( empty($posts[$i]) ): ?>
                               <a href='#' class='post-card-thumbnail-info-container'>
@@ -96,12 +102,12 @@ $posts = get_posts($posts_query);
                             <?php endif; ?>
 
                             <?php if( !empty($posts[$i]) ): ?>
-                              <a href='<?php echo $posts[$i]->guid; ?>' class='post-card-thumbnail-info-container'>
-                                  <h2 class='heading-2'><?php echo $posts[$i]->post_title; ?></h2>
-                                  <p class='paragraph-3'><?php echo get_summary_post($posts[$i]) ?></p>
+                              <a title='<?php $posts[$i]->post_title; ?>' href='<?php echo get_permalink($post); ?>' class='post-card-thumbnail-info-container'>
+                                  <h2 itemprop='headline' class='heading-2'><?php echo $posts[$i]->post_title; ?></h2>
+                                  <p itemprop='description' class='paragraph-3'><?php echo get_summary_post($posts[$i]) ?></p>
                               </a>
                             <?php endif; ?>
-                      </div>
+                      </article>
                   <?php endfor; ?>
                 </div>
             </div>
@@ -210,11 +216,22 @@ Health and fitness - Intellectual - Emotional - Spiritual - Skill - Family - Fri
         <div class='owl-carousel'>
             <a href='#' class='teacher-container'>
                 <div class='teacher-img-container'>
-                    <img src=' <?php echo get_template_directory_uri() . '/assets/images/teacher-1.png' ?> '>
+                    <img src=' <?php echo get_template_directory_uri() . '/assets/images/Melati Pertiwi.png' ?> '>
                 </div>
                 <div class='teacher-info-container'>
-                    <h2 class='teacher-name'>Sito Sopiani Lubis</h2>
-                    <p class='teacher-label'>Kepala Sekolah</p>
+                    <h2 class='teacher-name'>Melati Pertiwi</h2>
+                    <p class='teacher-label'>Kepala Sekolah & Tutor</p>
+                    <p class='teacher-description'>Life Book, English, Geografi</p>
+                </div>
+            </a>
+            <a href='#' class='teacher-container '>
+                <div class='teacher-img-container '>
+                    <img src=' <?php echo get_template_directory_uri() . '/assets/images/Aris Budiono.png' ?> '>
+                </div>
+                <div class='teacher-info-container'>
+                    <h2 class='teacher-name'>Aris Budiono</h2>
+                    <p class='teacher-label'>Tutor</p>
+                    <p class='teacher-description'>Sejarah Indonesia, Sejarah Peminatan, Bahasa Inggris</p>
                 </div>
             </a>
             <a href='#' class='teacher-container '>
@@ -222,26 +239,8 @@ Health and fitness - Intellectual - Emotional - Spiritual - Skill - Family - Fri
                     <img src=' <?php echo get_template_directory_uri() . '/assets/images/teacher-1.png' ?> '>
                 </div>
                 <div class='teacher-info-container'>
-                    <h2 class='teacher-name'>Ahmad Soebarjo</h2>
-                    <p class='teacher-label'>Kepala Sekolah</p>
-                </div>
-            </a>
-            <a href='#' class='teacher-container '>
-                <div class='teacher-img-container '>
-                    <img src=' <?php echo get_template_directory_uri() . '/assets/images/teacher-1.png' ?> '>
-                </div>
-                <div class='teacher-info-container'>
-                    <h2 class='teacher-name'>Sito Sopiani Lubis</h2>
-                    <p class='teacher-label'>Kepala Sekolah</p>
-                </div>
-            </a>
-            <a href='#' class='teacher-container '>
-                <div class='teacher-img-container '>
-                    <img src=' <?php echo get_template_directory_uri() . '/assets/images/teacher-1.png' ?> '>
-                </div>
-                <div class='teacher-info-container'>
-                    <h2 class='teacher-name'>Sito Sopiani Lubis</h2>
-                    <p class='teacher-label'>Kepala Sekolah</p>
+                    <h2 class='teacher-name'>Sri Atmini</h2>
+                    <p class='teacher-label'>Tutor</p>
                 </div>
             </a>
             <a href='#' class='teacher-container '>
@@ -251,6 +250,7 @@ Health and fitness - Intellectual - Emotional - Spiritual - Skill - Family - Fri
                 <div class='teacher-info-container'>
                     <h2 class='teacher-name'>Sito Sopiani Lubis</h2>
                     <p class='teacher-label'>Kepala Sekolah</p>
+                    <p class='teacher-description'>Agriculture, Matematika</p>
                 </div>
             </a>
             <a href='#' class='teacher-container '>
@@ -258,26 +258,29 @@ Health and fitness - Intellectual - Emotional - Spiritual - Skill - Family - Fri
                     <img src=' <?php echo get_template_directory_uri() . '/assets/images/teacher-1.png' ?> '>
                 </div>
                 <div class='teacher-info-container'>
-                    <h2 class='teacher-name'>Sito Sopiani Lubis</h2>
+                    <p class='teacher-name'>Dwi Hafiz .W</p>
                     <p class='teacher-label'>Kepala Sekolah</p>
+                    <p class='teacher-description'>Agama Islam, Ekonomi</p>
                 </div>
             </a>
             <a href='#' class='teacher-container '>
                 <div class='teacher-img-container '>
-                    <img src=' <?php echo get_template_directory_uri() . '/assets/images/teacher-1.png' ?> '>
+                    <img src=' <?php echo get_template_directory_uri() . '/assets/images/Angga Prawira.png' ?> '>
                 </div>
                 <div class='teacher-info-container'>
-                    <h2 class='teacher-name'>Sito Sopiani Lubis</h2>
-                    <p class='teacher-label'>Kepala Sekolah</p>
+                    <p class='teacher-name'>Angga Prawira</p>
+                    <p class='teacher-label'>Tutor</p>
+                    <p class='teacher-description'>Bahasa Indonesia</p>
                 </div>
             </a>
             <a href='#' class='teacher-container '>
                 <div class='teacher-img-container '>
-                    <img src=' <?php echo get_template_directory_uri() . '/assets/images/teacher-1.png' ?> '>
+                    <img src=' <?php echo get_template_directory_uri() . '/assets/images/Rio Ilham Hadi.png' ?> '>
                 </div>
                 <div class='teacher-info-container'>
-                    <h2 class='teacher-name'>Sito Sopiani Lubis</h2>
-                    <p class='teacher-label'>Kepala Sekolah</p>
+                    <p class='teacher-name'>Rio Ilham Hadi</p>
+                    <p class='teacher-label'>Tutor</p>
+                    <p class='teacher-description'>Teknologi Informasi dan Komunikasi</p>
                 </div>
             </a>
         </div>
@@ -290,7 +293,7 @@ Health and fitness - Intellectual - Emotional - Spiritual - Skill - Family - Fri
 <!-- ============================================================================== -->
 
 
-<section id='section-5' class='section'>
+<section id='section-5' class='section next-section-rounded'>
     <div class='section-wrapper'>
         <h2 class='heading-1 faq-heading'>
                 FAQ
@@ -307,30 +310,35 @@ Health and fitness - Intellectual - Emotional - Spiritual - Skill - Family - Fri
 				<ul class='faq-container block-wrapper'>
 						<li class='faq-question-container active'>
 								<a href='javascript:' class='faq-question-btn'> 
-										<span>Siapa Itu HSTB ? </span> 
+										<span>Apa Itu Home School Tunas Bangsa ? </span> 
 										<svg viewBox="0 0 24 24">
 												<path fill="currentColor" d="M8,5.14V19.14L19,12.14L8,5.14Z" />
 										</svg>
 								</a>
-								<div class='faq-answer-container paragraph-1'> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip </div>
+                <div class='faq-answer-container paragraph-1'>
+                    Sesuai dengan namanya, Home School Tunas Bangsa adalah sebuah sekolah homeschooling, namun yang membedakan dengan sekolah lainnya, di sekolah ini para murid dibimbing untuk belajar aktif mandiri, yaitu dengan guru hanya membimbing depan-depannya saja, sehingga murid diberikan kebebasan untuk mengeksplor pengetahuannya..
+                      <br>
+                      <br>
+                    Selain itu juga di akhir proses pembelajaran diadakan yang namanya Sharing Karya yang berupa Acara Production, Acara Production adalah acara unjuk karya untuk menampilkan karya-karya dan hasil belajar anak selama 1 semester dengan tujuan membentuk insan yang berkarya, bermanfaat dan memotivasi yang lainnya untuk ikut berpikir kreatif dan berkarya. 
+                </div>
 						</li>
             <li class='faq-question-container'>
                 <a href='javascript:' class='faq-question-btn'> 
-                    <span> Siapa Kita ? </span> 
+                    <span> Fasilitas Apa Yang Di Sediakan ? </span> 
                     <svg viewBox="0 0 24 24">
                         <path fill="currentColor" d="M8,5.14V19.14L19,12.14L8,5.14Z" />
                     </svg>
                 </a>
-                <div class='faq-answer-container paragraph-1'> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip </div>
+                <div class='faq-answer-container paragraph-1'> Di sekolah ini memfasilitasi berbagai fasilitas yang siap membuat murid-murid dapat belajar dengan nyaman, diantaranya ruang kelas yang dilengkapi dengan AC, Internet, Perpustakaan hingga Ruang Arena Bermain.</div>
             </li>
             <li class='faq-question-container'>
                 <a href='javascript:' class='faq-question-btn'> 
-                    <span> Siapa Kita ? </span> 
+                    <span> Tujuan Didirikannya Sekolah Ini ?</span> 
                     <svg viewBox="0 0 24 24">
                         <path fill="currentColor" d="M8,5.14V19.14L19,12.14L8,5.14Z" />
                     </svg>
                 </a>
-                <div class='faq-answer-container paragraph-1'> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip </div>
+                <div class='faq-answer-container paragraph-1'> HSTB adalah sekolah yang menjunjung tinggi budi pekerti, yaitu 50% budi pekerti dan 50% akademisi & keterampilan. Karakter yang dibentuk adalah anak-anak yang memahami etika, moral, nasionalis dan religius. </div>
             </li>
         </ul>
     </div>
@@ -341,7 +349,42 @@ Health and fitness - Intellectual - Emotional - Spiritual - Skill - Family - Fri
 <!-- +--------------------------+ SECTION 6 +-------------------------------------+  -->
 <!-- ============================================================================== -->
 
-<section id='section-6' class='section next-section-rounded'>
+
+<section id='section-6' class='section blue-bg section-rounded next-section-rounded'>
+    <div class='section-wrapper'>
+        <h2 class='heading-1'>Artikel Terbaru</h2>
+        <div class='owl-carousel'>
+          <?php foreach($posts_section as $post): ?>
+             <article class='post-card-container' itemscope='itemscope' itemprop='blogPost' itemtype='https://schema.org/BlogPosting'>
+              <a title='<?php $post->post_title; ?>'  class='post-card-thumbnail-container' href='<?php echo get_permalink($post); ?>'  >
+
+                <div class='post-card-thumbnail-image-container'?>
+                    <img alt='<?php $post->post_title; ?>' src=' <?php echo get_first_image( $post ); ?> ' />
+                </div>
+                <div class='post-card-thumbnail-info-container'>
+                  <h2 itemprop='headline' title='<?php $post->post_title; ?>' class='heading-3'><?php echo $post->post_title; ?></h2>
+                </div>
+              </a>
+              <div class='post-card-info-wrapper'>
+                <div class='post-card-info-container'>
+                    <p itemprop='description' class='paragraph-3'> <?php echo get_summary_post($post);  ?> </p> 
+                </div>
+                <a href='<?php echo get_permalink($post); ?>' class='btn'>Read More</a>
+              </div>
+            </article>
+ 
+          <?php endforeach; ?> 
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================================================== -->
+<!-- +--------------------------+ SECTION 7 +-------------------------------------+  -->
+<!-- ============================================================================== -->
+
+
+<section id='section-7' class='section section-rounded next-section-rounded'>
     <div class='section-wrapper'>
         <div class='section-heading-icon'>
             <svg viewBox="0 0 24 24">

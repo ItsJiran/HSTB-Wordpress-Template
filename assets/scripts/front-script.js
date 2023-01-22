@@ -62,7 +62,33 @@ $(document).ready(function(){
             }
         }
     });
-    
+   
+    $("#section-6 .owl-carousel").owlCarousel({
+        loop:true,
+        nav:false,
+        dots:false,
+        responsive:{
+            0:{
+                items:1.2,
+                margin:30,
+                loop:true,
+            },
+            400:{
+                items:1.5,
+                margin:30,
+            },
+            600:{
+                items:3.5,
+                margin:30,
+            },
+            800:{
+                items:4,
+                margin:50,
+            },
+        }
+    });
+
+
   });
 
 
@@ -124,17 +150,21 @@ setInterval(()=>{
 // ===================== SECTION 5 EVENT LSITENER =============================
 // ==============================================================================
 
+let questions_btn = document.getElementsByClassName('faq-question-btn');
 let questions_container = document.getElementsByClassName('faq-question-container');
-questions_container = Array.from(questions_container);
 
-for( let question of questions_container ){
+questions_container = Array.from(questions_container);
+questions_btn = Array.from(questions_btn);
+
+for( let question of questions_btn ){
     
     question.addEventListener('click',(e)=>{
 
+        let parent_node = question.parentNode;
         let current_active = questions_container.find( e => e.classList.contains('active') );
         
-        if(current_active !== question){
-            question.classList.add('active');
+        if(current_active !== parent_node){
+            parent_node.classList.add('active');
         }
 
         current_active.classList.remove('active');
