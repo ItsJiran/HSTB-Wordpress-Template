@@ -221,7 +221,6 @@ Health and fitness - Intellectual - Emotional - Spiritual - Skill - Family - Fri
                 <div class='teacher-info-container'>
                     <h2 class='teacher-name'>Melati Pertiwi</h2>
                     <p class='teacher-label'>Kepala Sekolah & Tutor</p>
-                    <p class='teacher-description'>Life Book, English, Geografi</p>
                 </div>
             </a>
             <a href='#' class='teacher-container '>
@@ -230,13 +229,12 @@ Health and fitness - Intellectual - Emotional - Spiritual - Skill - Family - Fri
                 </div>
                 <div class='teacher-info-container'>
                     <h2 class='teacher-name'>Aris Budiono</h2>
-                    <p class='teacher-label'>Tutor</p>
-                    <p class='teacher-description'>Sejarah Indonesia, Sejarah Peminatan, Bahasa Inggris</p>
+                    <p class='teacher-label'>Wali Kelas 11</p>
                 </div>
             </a>
             <a href='#' class='teacher-container '>
                 <div class='teacher-img-container '>
-                    <img src=' <?php echo get_template_directory_uri() . '/assets/images/teacher-1.png' ?> '>
+                    <img src=' <?php echo get_template_directory_uri() . '/assets/images/Sri Atmini.png' ?> '>
                 </div>
                 <div class='teacher-info-container'>
                     <h2 class='teacher-name'>Sri Atmini</h2>
@@ -245,22 +243,20 @@ Health and fitness - Intellectual - Emotional - Spiritual - Skill - Family - Fri
             </a>
             <a href='#' class='teacher-container '>
                 <div class='teacher-img-container '>
-                    <img src=' <?php echo get_template_directory_uri() . '/assets/images/teacher-1.png' ?> '>
+                    <img src=' <?php echo get_template_directory_uri() . '/assets/images/Sito Sopiani Lubis.png' ?> '>
                 </div>
                 <div class='teacher-info-container'>
                     <h2 class='teacher-name'>Sito Sopiani Lubis</h2>
-                    <p class='teacher-label'>Kepala Sekolah</p>
-                    <p class='teacher-description'>Agriculture, Matematika</p>
+                    <p class='teacher-label'>Tutor</p>
                 </div>
             </a>
             <a href='#' class='teacher-container '>
                 <div class='teacher-img-container '>
-                    <img src=' <?php echo get_template_directory_uri() . '/assets/images/teacher-1.png' ?> '>
+                    <img src=' <?php echo get_template_directory_uri() . '/assets/images/Dwi Hafiz.png' ?> '>
                 </div>
                 <div class='teacher-info-container'>
                     <p class='teacher-name'>Dwi Hafiz .W</p>
-                    <p class='teacher-label'>Kepala Sekolah</p>
-                    <p class='teacher-description'>Agama Islam, Ekonomi</p>
+                    <p class='teacher-label'>Tutor</p>
                 </div>
             </a>
             <a href='#' class='teacher-container '>
@@ -269,8 +265,7 @@ Health and fitness - Intellectual - Emotional - Spiritual - Skill - Family - Fri
                 </div>
                 <div class='teacher-info-container'>
                     <p class='teacher-name'>Angga Prawira</p>
-                    <p class='teacher-label'>Tutor</p>
-                    <p class='teacher-description'>Bahasa Indonesia</p>
+                    <p class='teacher-label'>Wali Kelas 10</p>
                 </div>
             </a>
             <a href='#' class='teacher-container '>
@@ -280,10 +275,45 @@ Health and fitness - Intellectual - Emotional - Spiritual - Skill - Family - Fri
                 <div class='teacher-info-container'>
                     <p class='teacher-name'>Rio Ilham Hadi</p>
                     <p class='teacher-label'>Tutor</p>
-                    <p class='teacher-description'>Teknologi Informasi dan Komunikasi</p>
                 </div>
             </a>
-        </div>
+            <a href='#' class='teacher-container '>
+                <div class='teacher-img-container '>
+                    <img src=' <?php echo get_template_directory_uri() . '/assets/images/Wiliam.png' ?> '>
+                </div>
+                <div class='teacher-info-container'>
+                    <p class='teacher-name'>William Gibson</p>
+                    <p class='teacher-label'>Tutor</p>
+                </div>
+            </a>
+	    <a href='#' class='teacher-container '>
+                <div class='teacher-img-container '>
+                    <img src=' <?php echo get_template_directory_uri() . '/assets/images/Fahri.png' ?> '>
+                </div>
+                <div class='teacher-info-container'>
+                    <p class='teacher-name'>Fahri Zio</p>
+                    <p class='teacher-label'>Tutor Music</p>
+                </div>
+            </a>
+            <a href='#' class='teacher-container '>
+                <div class='teacher-img-container '>
+                    <img src=' <?php echo get_template_directory_uri() . '/assets/images/Juriah.png' ?> '>
+                </div>
+                <div class='teacher-info-container'>
+                    <p class='teacher-name'>Juria Lubis</p>
+                    <p class='teacher-label'>Tutor</p>
+                </div>
+            </a>
+            <a href='#' class='teacher-container '>
+                <div class='teacher-img-container '>
+                    <img src=' <?php echo get_template_directory_uri() . '/assets/images/Sisi.png' ?> '>
+                </div>
+                <div class='teacher-info-container'>
+                    <p class='teacher-name'>Sisi</p>
+                    <p class='teacher-label'>Tutor</p>
+                </div>
+            </a>
+	</div>
     </div>
 </section>
 
