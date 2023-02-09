@@ -26,22 +26,63 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
   <div class='section-wrapper'>
     <div id='facilities-container' class='grid-4 block-wrapper'>
-      <div class='card-container border'>
-       <div class='facilities-icon-container'> </div> 
-       <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh </p>
+
+      <div class="post-card-container fasilitas-top-card-container"> 
+        <div class="post-card-thumbnail-container">
+          <div class="post-card-thumbnail-image-container"> 
+              <img src=" <?php echo get_template_directory_uri() . '/assets/images/Fasilitas/ATAS_Gallery1.jpg' ?>  ">
+          </div>
+        </div>
+        <div class="post-card-info-wrapper">
+            <div class="post-card-info-container">
+            <h2 title="" class="heading-3">Ruang Gallery</h2>
+              <p itemprop="description" class="paragraph-3">Ruang galeri adalah tempat pajagan dari hasil karya-karya peserta didik, ada yang berbentuk lukisan, karya tanah liat, karya menjahit, karya print 3d dan makalah.</p> 
+          </div>
+        </div>
       </div>
-      <div class='card-container border'>
-       <div class='facilities-icon-container'> </div> 
-       <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh </p>
+
+      <div class="post-card-container fasilitas-top-card-container"> 
+        <div title="" class="post-card-thumbnail-container">
+          <div class="post-card-thumbnail-image-container"> 
+              <img src="<?php echo get_template_directory_uri() . '/assets/images/Fasilitas/ATAS_Gallery2.jpg' ?>">
+          </div>
+        </div>
+        <div class="post-card-info-wrapper">
+            <div class="post-card-info-container">
+            <h2 title="" class="heading-3">Ruang Gallery</h2>
+              <p itemprop="description" class="paragraph-3">Ruang galeri adalah tempat pajagan dari hasil karya-karya peserta didik, ada yang berbentuk lukisan, karya tanah liat, karya menjahit, karya print 3d dan makalah.</p> 
+          </div>
+        </div>
       </div>
-      <div class='card-container border'>
-       <div class='facilities-icon-container'> </div> 
-       <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh </p>
+
+      <div class="post-card-container fasilitas-top-card-container"> 
+        <div title="" class="post-card-thumbnail-container">
+          <div class="post-card-thumbnail-image-container"> 
+              <img src=" <?php echo get_template_directory_uri() . '/assets/images/Fasilitas/ATAS_Perpustakaan.jpg' ?>  ">
+          </div>
+        </div>
+        <div class="post-card-info-wrapper">
+            <div class="post-card-info-container">
+            <h2 title="" class="heading-3">Perpustakaan</h2>
+              <p itemprop="description" class="paragraph-3">Perpustakaan sebagai sumber materi belajar baik di luar jam belajar ataupun pada saat pelajaran dan untuk kegiatan pinjam buku.</p> 
+          </div>
+        </div>
       </div>
-      <div class='card-container border'>
-       <div class='facilities-icon-container'> </div> 
-       <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh </p>
+
+      <div class="post-card-container fasilitas-top-card-container"> 
+        <div title="" class="post-card-thumbnail-container">
+          <div class="post-card-thumbnail-image-container"> 
+              <img src="<?php echo get_template_directory_uri() . '/assets/images/Fasilitas/ATAS_Studio.jpg' ?>">
+          </div>
+        </div>
+        <div class="post-card-info-wrapper">
+            <div class="post-card-info-container">
+            <h2 title="" class="heading-3">Studio</h2>
+              <p itemprop="description" class="paragraph-3">Studio tempat untuk kegiatan belajar musik mulai dari gitar bass, piano ataupun pada saat pelajaran dan untuk kegiatan pinjam buku.</p> 
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
@@ -52,15 +93,45 @@ if ( !defined( 'ABSPATH' ) ) exit;
   <div class='section-wrapper'>
     <div id='fasilitas-carousel' class='owl-carousel'>
 
-         <div id='program-3' class='program-container block-even-responsive-800 block-even-wrapper'>
+          <div class='program-container block-even-responsive-800 block-even-wrapper'>
             <div class='program-image-container block'>
-               <img src=' <?php echo get_template_directory_uri() . '/assets/images/hero-2-image-1.png' ?> '/>
+               <img src=' <?php echo get_template_directory_uri() . '/assets/images/Fasilitas/SCROLL_Kebun.jpg' ?> '/>
             </div>
           </div>
 
-         <div id='program-2' class='program-container block-even-responsive-800 block-even-wrapper'>
+          <div class='program-container block-even-responsive-800 block-even-wrapper'>
             <div class='program-image-container block'>
-               <img src=' <?php echo get_template_directory_uri() . '/assets/images/hero-2-image-1.png' ?> '/>
+               <img src=' <?php echo get_template_directory_uri() . '/assets/images/Fasilitas/SCROLL_Kebun2.jpg' ?> '/>
+            </div>
+          </div>
+
+         <div class='program-container block-even-responsive-800 block-even-wrapper'>
+            <div class='program-image-container block'>
+               <img src=' <?php echo get_template_directory_uri() . '/assets/images/Fasilitas/SCROLL_Kebun3.jpg' ?> '/>
+            </div>
+          </div>
+
+          <div class='program-container block-even-responsive-800 block-even-wrapper'>
+            <div class='program-image-container block'>
+               <img src=' <?php echo get_template_directory_uri() . '/assets/images/Fasilitas/SCROLL_Studio.jpg' ?> '/>
+            </div>
+          </div>
+
+          <div class='program-container block-even-responsive-800 block-even-wrapper'>
+            <div class='program-image-container block'>
+               <img src=' <?php echo get_template_directory_uri() . '/assets/images/Fasilitas/SCROLL_Studio2.jpg' ?> '/>
+            </div>
+          </div>
+
+         <div class='program-container block-even-responsive-800 block-even-wrapper'>
+            <div class='program-image-container block'>
+               <img src=' <?php echo get_template_directory_uri() . '/assets/images/Fasilitas/SCROLL_Studio3.jpg' ?> '/>
+            </div>
+          </div>
+
+         <div class='program-container block-even-responsive-800 block-even-wrapper'>
+            <div class='program-image-container block'>
+               <img src=' <?php echo get_template_directory_uri() . '/assets/images/Fasilitas/SCROLL_Loker.jpg' ?> '/>
             </div>
         </div>
 
@@ -75,38 +146,38 @@ if ( !defined( 'ABSPATH' ) ) exit;
     <div class='facilities-description-container block-wrapper grid-2'>
       <div class='card-container row'>
         <div class='card-thumbnail-container'>
-          <img src='#'> 
+          <img src=' <?php echo get_template_directory_uri() . '/assets/images/Fasilitas/BAWAH_Aula.jpg' ?>  ?>'> 
         </div>
         <div class='card-info-wrapper'>
-          <h2 class='heading-3'>Lorem Ipsum</h2>
-          <p class='paragraph-2'>Lorem ipsum dolor sit amet, consectetuer consectetuer Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+          <h2 class='heading-3'>Aula</h2>
+          <p class='paragraph-2'>Aula di lantai 2 adalah tempat serbaguna, biasanya digunakan untuk kegiatan belajar collosal, shalat Dzuhur berjama'ah, pelatiahn / meeting guru, acara Production ( Sharing Karya ), dan masih banyak lagi.</p>
         </div>
       </div>
       <div class='card-container  row'>
         <div class='card-thumbnail-container'>
-          <img src='#'> 
+          <img src=' <?php echo get_template_directory_uri() . '/assets/images/Fasilitas/BAWAH_Aula2.jpg' ?>  ?>'> 
         </div>
         <div class='card-info-wrapper'>
-          <h2 class='heading-3'>Lorem Ipsum</h2>
-          <p class='paragraph-2' >Lorem ipsum dolor sit amet, consectetuer consectetuer Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+          <h2 class='heading-3'>Kebun & Green House</h2>
+          <p class='paragraph-2' >Aula di lantai 2 adalah tempat serbaguna, biasanya digunakan untuk kegiatan belajar collosal, shalat Dzuhur berjama'ah, pelatiahn / meeting guru, acara Production ( Sharing Karya ), dan masih banyak lagi.</p>
         </div>
       </div>
       <div class='card-container row'>
         <div class='card-thumbnail-container'>
-          <img src='#'> 
+          <img src=' <?php echo get_template_directory_uri() . '/assets/images/Fasilitas/BAWAH_Kantin1.jpg' ?>  ?>'> 
         </div>
         <div class='card-info-wrapper'>
-          <h2 class='heading-3'>Lorem Ipsum</h2>
-          <p class='paragraph-2'>Lorem ipsum dolor sit amet, consectetuer consectetuer Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+          <h2 class='heading-3'>Kantin</h2>
+          <p class='paragraph-2'>Kantin menyediakan berbagai snack makanan dan minuman, buka saat jam istirahat dan waktu pulang sekolah</p>
         </div>
       </div>
       <div class='card-container row'>
         <div class='card-thumbnail-container'>
-          <img src='#'> 
+          <img src=' <?php echo get_template_directory_uri() . '/assets/images/Fasilitas/BAWAH_Playground.jpg' ?>  ?>'> 
         </div>
         <div class='card-info-wrapper'>
-          <h2 class='heading-3'>Lorem Ipsum</h2>
-          <p class='paragraph-2'>Lorem ipsum dolor sit amet, consectetuer consectetuer Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+          <h2 class='heading-3'>PlayGround</h2>
+          <p class='paragraph-2'>Playground outdoor dengan ayunan dan perosotan digunakan anak murid mulai dari Paud-SD</p>
         </div>
       </div>
     </div>

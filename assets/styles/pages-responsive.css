@@ -19,6 +19,12 @@
 
 @media only screen and (max-width: 900px) {
 
+  .facilities-description-container .card-container{
+    flex-direction:column;
+  }
+  #fasilitas-page-section-4 .card-info-wrapper{
+    flex-grow: 0;
+  }
 
 }
 
