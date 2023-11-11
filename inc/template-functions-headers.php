@@ -32,10 +32,10 @@ function wp_header_style_init(){
     include_style_file('owlcarousel'      ,'owl.carousel.min.css','/assets//libraries/owlcarousel/assets/');   
     include_style_file('owlcarousel-theme','owl.theme.default.min.css','/assets//libraries/owlcarousel/assets/');   
 
-    include_style_file('navigation','navigation.css','/assets/styles/');   
+    // include_style_file('navigation','navigation.css','/assets/styles/');   
     include_style_file('responsive','responsive.css','/assets/styles/');   
 
-    // front is a section in the frontpage that maybe can we use in other page
+    // // front is a section in the frontpage that maybe can we use in other page
     include_style_file('front',  'front.css',   '/assets/styles/');   
     include_style_file('front-responsive','front-responsive.css','/assets/styles/');   
     
@@ -43,14 +43,10 @@ function wp_header_style_init(){
     // +---------------+ HOMEPAGE +------------------+
     // +---------------------------------------------+
 
-    if( is_front_page() && is_home() || is_home() ){
-
-    };
-
     if( is_page() ){
       // pages is a section in the homepage that maybe can we use in other page
-      include_style_file('pages',  'pages.css',   '/assets/styles/');   
-      include_style_file('pages-responsive','pages-responsive.css','/assets/styles/');   
+      //include_style_file('pages',  'pages.css',   '/assets/styles/');   
+      // include_style_file('pages-responsive','pages-responsive.css','/assets/styles/');   
     }
 
 }
@@ -62,8 +58,7 @@ function wp_header_script_init(){
     // +---------------+ HOMEPAGE +------------------+
  
     if( is_front_page() && is_home() || is_home() ){
-
-
+        
     };
 
 

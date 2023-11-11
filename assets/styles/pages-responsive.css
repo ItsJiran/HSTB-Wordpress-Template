@@ -19,27 +19,12 @@
 
 @media only screen and (max-width: 900px) {
 
-  .facilities-description-container .card-container{
-    flex-direction:column;
-  }
-  #fasilitas-page-section-4 .card-info-wrapper{
-    flex-grow: 0;
-  }
 
 }
 
 @media only screen and (max-width: 800px) {	
 
-  #sejarah .image-container{
-    width:100%;
-  }
 
-  #idea{
-    gap:20px;
-  }
-  #idea .block{
-    width:100%;
-  }
 
 }
 

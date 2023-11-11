@@ -46,31 +46,31 @@ function displayer_main_content(){
 
     // +---------------+ POST +------------------+
     // +------------------------------------------+
-    if( is_single() )
-      return get_template_part('template-parts/Main/post');
+    // if( is_single() )
+    //   return get_template_part('template-parts/Main/post');
 
-    // +---------------+ PAGE +------------------+
-    // +------------------------------------------+ 
-    if( is_page('about') )
-      return get_template_part('template-parts/Main/about');
+    // // +---------------+ PAGE +------------------+
+    // // +------------------------------------------+ 
+    // if( is_page('about') )
+    //   return get_template_part('template-parts/Main/about');
 
-    if( is_page('contact') )
-      return get_template_part('template-parts/Main/contact');
+    // if( is_page('contact') )
+    //   return get_template_part('template-parts/Main/contact');
 
-    if( is_page('blogs') )
-      return get_template_part('template-parts/Main/blogs');
+    // if( is_page('blogs') )
+    //   return get_template_part('template-parts/Main/blogs');
 
-    if( is_page('testimonials') )
-      return get_template_part('template-parts/Main/testimonials');
+    // if( is_page('testimonials') )
+    //   return get_template_part('template-parts/Main/testimonials');
 
-    if( is_page('fasilitas') )
-      return get_template_part('template-parts/Main/fasilitas');
+    // if( is_page('fasilitas') )
+    //   return get_template_part('template-parts/Main/fasilitas');
 
-    if( is_page('pendaftaran') )
-      return get_template_part('template-parts/Main/pendaftaran');
+    // if( is_page('pendaftaran') )
+    //   return get_template_part('template-parts/Main/pendaftaran');
 
-    if( is_page('gallery') )
-      return get_template_part('template-parts/Main/gallery');
+    // if( is_page('gallery') )
+    //   return get_template_part('template-parts/Main/gallery');
 
 }
 
@@ -85,7 +85,7 @@ function displayer_footer_content(){
 
   if( is_front_page() && is_home() || is_home() || is_single() || is_page() )
     return get_template_part('template-parts/Footer/rounded-footer');
-  
+
   else 
     return get_template_part('template-parts/Footer/not-rounded-footer');
   

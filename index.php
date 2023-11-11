@@ -25,6 +25,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 				crossorigin="anonymous"></script> -->
 
     <title><?php echo format_web_title();  ?></title>
+    <?php do_action('wp_head') ?>
 
     <!-- META TAG -->
     <meta content="<?php get_site_url() ?>" property="og:url">
@@ -38,50 +39,14 @@ if ( !defined( 'ABSPATH' ) ) exit;
     <meta content="Indonesia" name="geo.placename"> 
     <meta content="id" name="geo.country"> 
 
-		<script src='<?php echo get_template_directory_uri() . '/assets/scripts/jquery-3.6.1.min.js';  ?>'></script>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+	<script src='<?php echo get_template_directory_uri() . '/assets/scripts/jquery-3.6.1.min.js';  ?>'></script>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100;300;400;500;600&family=Inter:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
 
-		<?php 
-		// ==========================================================================================
-		// +------------------------------+ INCLUDE HOOKS +-----------------------------------------+
-		// ==========================================================================================
-		/**
-		 * @hooks wp_header_style_init();
-		 */ 
-		wp_head();
-?>
-
-    <style>
-
-    /* ============ LOADING ============= */
-    #loading-screen{
-      position:fixed;
-      z-index:999;
-      width:100%;
-      height:100%;
-      background-color:white;
-      transition:0.4s;
-    }
-    #loading-screen img{
-      position:absolute;
-      top:50%;
-      left:50%;
-      transform:translate(-50%,-50%);
-      width:50px;
-      height:50px;
-    }
-    #loading-screen.clear{
-      opacity:0;
-      visibility: hidden;
-    }
-
-    </style>
   </head>
     
 	<body <?php body_class(); ?> >
-
-    <div id='loading-screen'><img id='loading-gif' src='https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif'></img></div>
 
 		<?php 
 	

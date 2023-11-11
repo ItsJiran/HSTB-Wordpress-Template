@@ -36,9 +36,24 @@ $options = Array(
 
 ?>
 
+<div class='nav-wrapper wrapper'>
 
-<!-- +---------------------------+ NAVIGATION DESKTOP BAR +---------------------------+ -->
-<?php get_template_part('template-parts/Navigation/navigation-bar', null, Array('options'=>$options)); ?>
+  <ul class='nav-container'>
 
-<!-- +-------------------------+ NAVIGATION SIDEBAR +---------------------------+ -->
-<?php get_template_part('template-parts/Navigation/sidebar', null, Array('options'=>$options)); ?>
+    <div class='nav-spacer'>
+      <li class='nav-item'><a href='/'>Home</a></li>
+      <li class='nav-item'><a href='/facilities'>Fasilitas</a></li>
+      <li class='nav-item'><a href='/gallery'>Galeri</a></li>
+    </div>
+
+    <li class='nav-item-logo'><a href='/'><img src=' <?php echo get_template_directory_uri() . '/assets/images/logo.png' ?> '/></a></li>
+
+    <div class='nav-spacer'>
+      <li class='nav-item'><a href='/program'>Program</a></li>
+      <li class='nav-item'><a href='/registration'>Pendaftaran</a></li>
+      <li class='nav-item'><a href='/testimonies'>Testimoni</a></li>
+    </div>
+
+  </ul>
+
+</div>

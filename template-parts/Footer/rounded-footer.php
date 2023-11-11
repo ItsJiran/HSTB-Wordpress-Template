@@ -18,7 +18,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 <!-- +--------------------------+ FOOTER SECTION +-------------------------------------+  -->
 <!-- ============================================================================== -->
 
-<section id='footer-section' class='section blue-bg section-rounded'>
+<section id='footer-section' class='section' style='background: linear-gradient(0deg, #87FFB0 0%, rgba(255, 255, 255, 0) 100%);'>
     <div class='section-wrapper'>
         <div class='block-even-wrapper block-even-responsive-800 block-wrapper'>
             <div class='block'>

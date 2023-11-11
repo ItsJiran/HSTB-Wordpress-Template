@@ -23,11 +23,11 @@ function wp_footer_script_init(){
     // +-------------+ REGULAR ONE +-----------------+
     // +---------------------------------------------+
 
-    include_script_file('owlcarousel',      'owl.carousel.min.js', '/assets/libraries/owlcarousel/');   
-    include_script_file('navigation-script','navigation-script.js','/assets/scripts/');   
+    // include_script_file('owlcarousel',      'owl.carousel.min.js', '/assets/libraries/owlcarousel/');   
+    // include_script_file('navigation-script','navigation-script.js','/assets/scripts/');   
 
-    // front is a section in the homepage that maybe can we use in other page
-    include_script_file('front-script',      'front-script.js',      '/assets/scripts/');   
+    // // front is a section in the homepage that maybe can we use in other page
+    // include_script_file('front-script',      'front-script.js',      '/assets/scripts/');   
 
     // +---------------------------------------------+
     // +---------------+ HOMEPAGE +------------------+
@@ -38,6 +38,6 @@ function wp_footer_script_init(){
     };
 
     if( is_page() ){
-      include_script_file('pages-script', 'pages-script.js', '/assets/scripts/');   
+      // include_script_file('pages-script', 'pages-script.js', '/assets/scripts/');   
     }
 }

@@ -17,18 +17,18 @@ if ( !defined( 'ABSPATH' ) ) exit;
 // ==========================================================================================
 
 function include_style_file( String $unique_name, String $file_name, String $sub_path = '/' ){
-    $file_path_uri = get_template_directory_uri() . $sub_path . $file_name;
+    $file_path_uri = get_template_directory_uri() . $sub_path . $file_name . '?time=' . time() ;
     $file_path     = get_template_directory() . $sub_path . $file_name;
 
-    if( file_exists($file_path) ) wp_enqueue_style( $unique_name, $file_path_uri);
-    else echo '<h1 class="error-msg">' . 'Error PHP File Not Found : ' . $sub_path . $file_name . '</h1>';
+    if( file_exists($file_path) ) return wp_enqueue_style( $unique_name, $file_path_uri);
+    else return  '<h1 class="error-msg">' . 'Error PHP File Not Found : ' . $sub_path . $file_name . '</h1>';
 }
 function include_script_file( String $unique_name, String $file_name, String $sub_path = '/' ){
     $file_path_uri = get_template_directory_uri() . $sub_path . $file_name;
     $file_path     = get_template_directory() . $sub_path . $file_name;
 
-    if( file_exists($file_path) ) wp_enqueue_script( $unique_name, $file_path_uri);
-    else echo '<h1 class="error-msg">' . 'Error PHP File Not Found : ' . $sub_path . $file_name . '</h1>';
+    if( file_exists($file_path) ) return wp_enqueue_script( $unique_name, $file_path_uri);
+    else return '<h1 class="error-msg">' . 'Error PHP File Not Found : ' . $sub_path . $file_name . '</h1>';
 }
 
 function get_first_image($post) {
@@ -70,7 +70,6 @@ function format_web_title(){
 
 }
 function format_web_description(){
-
 
   if( is_front_page() && is_home() || is_home() || is_page('about') )
     return "Sekolah Home School Tunas Bangsa adalah sekolah dengan cara belajar aktif mandiri. Sekolah HSTB adalah wahana untuk mereka belajar dan berkembang, dengan para pembimbing yang akan memfasilitasi dan menemani mereka selama proses belajar. Melayani kebutuhan peserta didik";
